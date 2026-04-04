@@ -1,0 +1,70 @@
+<!-- Header -->
+<header>
+  <div class="header-content">
+    <h1>?? {{ title }}</h1>
+    <p>Fresh, High-Quality Fruits Delivered to Your Door</p>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <!-- Featured Fruits Section -->
+  <section class="section">
+    <h2>Our Fresh Collection</h2>
+    <div class="fruits-grid">
+      <div class="fruit-card" *ngFor="let fruit of fruits">
+        <img [src]="fruit.image" [alt]="fruit.name" class="fruit-image" />
+        <div class="fruit-info">
+          <h3 class="fruit-name">{{ fruit.name }}</h3>
+          <p class="fruit-description">{{ fruit.description }}</p>
+          <div class="fruit-price">${{ fruit.price }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <h2>About Us</h2>
+    <div class="about-section">
+      <h3>Welcome to Fresh Fruits Hub</h3>
+      <p>
+        We are dedicated to providing the freshest, highest-quality fruits directly to your doorstep. 
+        Our fruits are carefully selected from local farms and sourced from trusted suppliers around the world. 
+        We believe in sustainability, fair trade, and supporting our local farming communities.
+      </p>
+      <p style="margin-top: 15px;">
+        Whether you're looking for everyday fruits or exotic varieties, we have something for everyone. 
+        All our products are hand-picked to ensure only the best reach your table.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <h2>Get In Touch</h2>
+    <div class="contact-section">
+      <h3>Contact Information</h3>
+      <div class="contact-info">
+        <div class="contact-item">
+          <strong>Phone:</strong><br>
+          +1 (555) 123-4567
+        </div>
+        <div class="contact-item">
+          <strong>Email:</strong><br>
+          info@freshfruitshub.com
+        </div>
+        <div class="contact-item">
+          <strong>Address:</strong><br>
+          123 Fruit Street, Garden City, GC 12345
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Fresh Fruits Hub. All rights reserved.</p>
+  <p>Bringing Nature's Best to Your Table</p>
+</footer>
