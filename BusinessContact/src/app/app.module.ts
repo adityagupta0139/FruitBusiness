@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SuitComponent } from './components/suit/suit.component';
 import { SareeComponent } from './components/saree/saree.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { AccessoriesComponent } from './components/accessories/accessories.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     DashboardComponent,
     SuitComponent,
     SareeComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    AccessoriesComponent
   ],
   imports: [
     BrowserModule,

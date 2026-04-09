@@ -1,0 +1,18 @@
+<section class="accessories-page">
+  <div class="accessories-header">
+    <h2>Jewelry Essentials</h2>
+    <p>Traditional Indian jewelry often serves as the centerpiece of an ethnic ensemble.</p>
+  </div>
+
+  <div class="accessories-list">
+    <div class="accessory-card" *ngFor="let accessory of accessories">
+      <div class="accessory-image">
+        <img [src]="accessory.image" [alt]="accessory.title" />
+      </div>
+      <div class="accessory-info">
+        <h3>{{ accessory.title }}:</h3>
+        <p>{{ accessory.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
