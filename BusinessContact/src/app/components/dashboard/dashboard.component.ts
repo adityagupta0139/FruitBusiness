@@ -14,9 +14,9 @@ interface Product {
 })
 export class DashboardComponent implements OnInit, OnDestroy {
   heroImages: string[] = [
-    'assets/timeline1.png',
-    'assets/timeline.png',
-    'https://via.placeholder.com/1200x500?text=Elevate+Your+Style'
+    'assets/timelines1.png',
+    'assets/timelines2.png',
+    'assets/timelines3.png'
   ];
   currentImageIndex: number = 0;
   private intervalId: any;
@@ -25,25 +25,25 @@ export class DashboardComponent implements OnInit, OnDestroy {
     {
       id: 1,
       name: 'Anarkali Suit',
-      image: 'https://via.placeholder.com/250x250?text=Classic+Blazer',
+      image: 'assets/anarkali.png',
       price: 120
     },
     {
       id: 2,
       name: 'Kanjeevaram Saree',
-      image: 'https://via.placeholder.com/250x250?text=Green+Midi+Dress',
+      image: 'assets/kanjivaram.png',
       price: 89
     },
     {
       id: 3,
       name: 'Pheran',
-      image: 'https://via.placeholder.com/250x250?text=White+Sneakers',
+      image: 'assets/pheran.png',
       price: 75
     },
     {
       id: 4,
-      name: 'Sarees',
-      image: 'https://via.placeholder.com/250x250?text=Leather+Tote',
+      name: 'Kasavu Sarees',
+      image: 'assets/kasavu.png',
       price: 150
     }
   ];
