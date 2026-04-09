@@ -1,0 +1,152 @@
+.header {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.logo-image {
+  max-height: 80px;
+  max-width: 220px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.search-container {
+  flex: 1 1 320px;
+  max-width: 420px;
+  min-width: 200px;
+  order: 2;
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.header-actions {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  order: 3;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.action-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.action-link:hover {
+  color: #666;
+}
+
+.cart-icon {
+  font-size: 20px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navigation {
+  /* border-top: 1px solid #e0e0e0; */
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 25px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+.nav-divider {
+  color: #ccc;
+  margin: 0 -12px;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .nav-link {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .navigation {
+    padding: 15px 20px;
+  }
+}

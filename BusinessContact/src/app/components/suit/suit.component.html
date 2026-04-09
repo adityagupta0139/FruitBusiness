@@ -1,0 +1,18 @@
+<section class="suit-page">
+  <div class="suit-header">
+    <h2>Traditional & Regional Favorites</h2>
+    <p>Explore classic suit styles with rich visuals and descriptions.</p>
+  </div>
+
+  <div class="suit-list">
+    <div class="suit-card" *ngFor="let suit of suits">
+      <div class="suit-image">
+        <img [src]="suit.image" [alt]="suit.title" />
+      </div>
+      <div class="suit-content">
+        <h3>{{ suit.title }}:</h3>
+        <p>{{ suit.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

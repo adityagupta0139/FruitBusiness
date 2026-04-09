@@ -1,0 +1,85 @@
+.saree-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.saree-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.saree-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #183968;
+  margin-bottom: 14px;
+}
+
+.saree-header p {
+  color: #4a5f7a;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.saree-list {
+  display: grid;
+  gap: 25px;
+}
+
+.saree-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 25px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.saree-image {
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.saree-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.saree-info {
+  padding: 25px;
+}
+
+.saree-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #183968;
+}
+
+.saree-info h3 span {
+  display: block;
+  font-size: 16px;
+  color: #5a6b81;
+  margin-top: 6px;
+}
+
+.saree-info p {
+  margin: 0;
+  color: #4a5f7a;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .saree-card {
+    grid-template-columns: 1fr;
+  }
+
+  .saree-image {
+    min-height: 260px;
+  }
+}

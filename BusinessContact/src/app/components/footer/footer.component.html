@@ -1,0 +1,58 @@
+<footer class="footer">
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-left">
+        <h3>Subscribe to Our Newsletter</h3>
+        <div class="newsletter-form">
+          <input 
+            type="email" 
+            [(ngModel)]="subscribeEmail"
+            placeholder="Email" 
+            class="email-input"
+          />
+          <button (click)="onSubscribe()" class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+      <div class="newsletter-right">
+        <div class="social-links">
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">📷</a>
+          <a href="#" class="social-icon">📌</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Features -->
+  <section class="features-section">
+    <div class="features-container">
+      <div class="feature">
+        <span class="feature-icon">🔒</span>
+        <h4>Secure Payments</h4>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🚚</span>
+        <h4>Fast Shipping</h4>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⭐</span>
+        <h4>Customer Reviews</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p class="info-item">📧 info@example.com</p>
+      <p class="info-item">📞 123-456-7890</p>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>&copy; 2024 All rights reserved. Fashion E-commerce Platform</p>
+  </div>
+</footer>

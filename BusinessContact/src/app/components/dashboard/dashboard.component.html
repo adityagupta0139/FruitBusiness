@@ -1,0 +1,37 @@
+<div class="dashboard">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img [src]="heroImages[currentImageIndex]" alt="Hero Image" class="hero-image" />
+    <div class="hero-content">
+      <h2 class="hero-title">New Season<br>Collection</h2>
+      <button class="hero-btn">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="featured-section">
+    <h3 class="section-title">Featured Products</h3>
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let product of featuredProducts">
+        <div class="product-image">
+          <img [src]="product.image" [alt]="product.name" />
+          <div class="product-overlay">
+            <button class="product-btn">View Details</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <h4 class="product-name">{{ product.name }}</h4>
+          <p class="product-price">${{ product.price }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+  <section class="promo-section">
+    <div class="promo-content">
+      <h2 class="promo-title">Elevate Your Style</h2>
+      <p class="promo-subtitle">Discover the Latest Trends</p>
+    </div>
+  </section>
+</div>

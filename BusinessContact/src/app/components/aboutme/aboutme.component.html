@@ -1,0 +1,42 @@
+<section class="aboutme-page">
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <img src="https://images.unsplash.com/photo-1508214751196-bcfd092b4a4d?auto=format&fit=crop&w=1200&q=80" alt="Aaayuu Brand" class="banner-image" />
+  </div>
+
+  <!-- About Content -->
+  <div class="about-content">
+    <h1>About Me</h1>
+    
+    <div class="about-text">
+      <p>
+        Welcome to Aaayuu, your curated destination for the finest Indian ethnic wear. 
+        Our name reflects the essence of life and grace, and our mission is to bring that beauty into your wardrobe.
+      </p>
+
+      <p>
+        From the regal drape of a Banarasi saree to the effortless charm of a contemporary Palazzo suit, 
+        we believe every outfit should tell a story.
+      </p>
+
+      <p>
+        At Aaayuu, we don't just sell clothes; we <strong>celebrate the spirit of the modern woman</strong> who cherishes her heritage 
+        while embracing the future.
+      </p>
+
+      <p>
+        Whether you are dressing for a grand wedding or a quiet celebration at home, 
+        we are here to ensure you feel radiant, confident, and uniquely you.
+      </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="features-section">
+      <div class="feature-card" *ngFor="let feature of features">
+        <div class="feature-icon">{{ feature.icon }}</div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

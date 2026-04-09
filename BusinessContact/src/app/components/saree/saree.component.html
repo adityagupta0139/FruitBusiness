@@ -1,0 +1,18 @@
+<section class="saree-page">
+  <div class="saree-header">
+    <h2>Traditional Regional Masterpieces</h2>
+    <p>India’s diverse geography has birthed iconic saree styles, each rooted in its local culture:</p>
+  </div>
+
+  <div class="saree-list">
+    <div class="saree-card" *ngFor="let saree of sarees">
+      <div class="saree-image">
+        <img [src]="saree.image" [alt]="saree.title" />
+      </div>
+      <div class="saree-info">
+        <h3>{{ saree.title }} <span>({{ saree.region }})</span></h3>
+        <p>{{ saree.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
